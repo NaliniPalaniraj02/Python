@@ -1,1 +1,9 @@
+def get_bucket_name(repository_name):
+   outstr = repository_name.split("-")
+   bucket_name= "." .join(outstr[:4])
+   return bucket_name
+print("Enter the string with hyphen in between words")
+mystring=" "
+repository_name = input(mystring)
+print(get_bucket_name(repository_name))
 
